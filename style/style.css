@@ -1,0 +1,79 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.modal-container{
+	left: 0;
+	top: 0;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(178, 190, 195, .5);
+}
+.modal{
+	background-color: white;
+	position: absolute;
+	left: 80px;
+	right: 80px;
+	top: 80px;
+	bottom: 80px;
+	box-shadow: 0 0 20px black;
+	padding: 20px;
+
+}
+
+.del_elem{
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: -15px;
+	right: -15px;
+	cursor: pointer;
+	/*background-color: black;*/
+}
+
+.posts{
+	background-color: pink;
+	width: 500px;
+	height: 300px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-rows: 50px 1fr;
+}
+.trigger-container{
+	display: flex;
+	justify-content: space-between;
+}
+.trigger-container div{
+	width: 30px;
+	height: 30px;
+	border: 2px solid red;
+	color: #c0392b;
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.trigger-container div.active {
+	background-color: red;
+	color: white;
+}
+.post-container{
+	position: relative;
+	overflow-y: scroll;
+}
+.post-container p {
+	position: absolute;
+	padding: 10px;
+	left: 0;
+	top: 0;
+	display: none;
+
+}
+.post-container p.active{
+	display: block;
+}
