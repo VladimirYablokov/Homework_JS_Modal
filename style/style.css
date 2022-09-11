@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 }
+
 .modal-container{
 	left: 0;
 	top: 0;
@@ -32,7 +33,8 @@
 	top: -15px;
 	right: -15px;
 	cursor: pointer;
-	/*background-color: black;*/
+	/* background-color: black; */
+	border-radius: 15px;
 }
 
 .posts{
@@ -41,6 +43,7 @@
 	height: 300px;
 	margin: 0 auto;
 	display: grid;
+	margin-top: 100px;
 	grid-template-rows: 50px 1fr;
 }
 .trigger-container{
@@ -48,10 +51,11 @@
 	justify-content: space-between;
 }
 .trigger-container div{
-	width: 30px;
-	height: 30px;
+	width: 40px;
+	height: 40px;
 	border: 2px solid red;
-	color: #c0392b;
+	border-radius: 21px;
+	color: #463938;
 	font-size: 30px;
 	display: flex;
 	justify-content: center;
@@ -72,8 +76,20 @@
 	left: 0;
 	top: 0;
 	display: none;
-
 }
 .post-container p.active{
 	display: block;
+}
+.btns{
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: repeat(2, 50px);
+	grid-gap: 20px;
+	justify-content: center;
+	/* cursor: pointer */
+}
+.btn{
+	color: black;
+	background-color: white;
+	border: 1px solid grey; 
 }
